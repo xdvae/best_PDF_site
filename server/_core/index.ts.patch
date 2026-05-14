@@ -1,0 +1,5 @@
+// Add this import at the top of server/_core/index.ts
+import conversionsRouter from "../api/conversions";
+
+// Add this in the Express app setup (before app.listen):
+app.use("/api", conversionsRouter);
