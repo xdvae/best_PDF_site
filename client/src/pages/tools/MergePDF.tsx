@@ -15,7 +15,7 @@ interface PDFFile {
 const SEO_CONFIG: ToolSEOConfig = {
   title: "Merge PDF Online Free — Combine Multiple PDFs Into One | OmniPDF",
   description: "Merge multiple PDF files into one document online free. No sign up, no watermarks. Combine PDFs instantly — drag to reorder, files deleted after merging.",
-  canonical: "https://omnipdf.app/merge-pdf",
+  canonical: "https://omnipdf.xyz/merge-pdf",
   ogTitle: "Free PDF Merger — Combine PDFs Online, No Sign Up",
   ogDescription: "Merge multiple PDFs into one file online free. No account required. Fast, secure, no watermarks.",
   h1: "Merge PDF — Combine Multiple PDFs Free",

@@ -9,7 +9,7 @@ import ToolPageSEO, { type ToolSEOConfig } from "@/components/ToolPageSEO";
 const SEO_CONFIG: ToolSEOConfig = {
   title: "PDF to JPG Converter Free — Convert PDF Pages to Images Online | OmniPDF",
   description: "Convert PDF pages to JPG or PNG images online free. No sign up, no ads, no watermarks. All pages exported as images in a ZIP download. Trusted by millions.",
-  canonical: "https://omnipdf.app/pdf-to-images",
+  canonical: "https://omnipdf.xyz/pdf-to-images",
   ogTitle: "Free PDF to JPG Converter — Convert PDF to Images Online, No Sign Up",
   ogDescription: "Convert PDF to JPG or PNG online free. All pages as images in a ZIP. No account needed. Used by millions.",
   h1: "PDF to JPG — Convert PDF Pages to Images Free",

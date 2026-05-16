@@ -11,7 +11,7 @@ interface ZipEntry { name: string; downloading: boolean; }
 const SEO_CONFIG: ToolSEOConfig = {
   title: "ZIP Extractor Online Free — Open & Extract ZIP Files | OmniPDF",
   description: "Extract and download files from ZIP archives online free. View ZIP contents, download individual files. No sign up, no ads, no software needed. Trusted by millions.",
-  canonical: "https://omnipdf.app/zip-extractor",
+  canonical: "https://omnipdf.xyz/zip-extractor",
   ogTitle: "Free ZIP Extractor Online — Open ZIP Files, No Sign Up",
   ogDescription: "Extract files from ZIP archives online free. View contents and download files. No account needed. Used by millions.",
   h1: "ZIP Extractor — Open & Extract ZIP Files Free",

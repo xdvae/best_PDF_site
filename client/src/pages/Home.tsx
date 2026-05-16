@@ -217,8 +217,8 @@ export default function Home() {
             <a href="#faq" className="text-slate-600 hover:text-slate-900 transition">
               FAQ
             </a>
-            <a href="#" className="text-slate-600 hover:text-slate-900 transition">
-              About
+            <a href="/p2p-transfer" className="text-slate-600 hover:text-slate-900 transition">
+              Send Files
             </a>
           </div>
         </div>
@@ -377,18 +377,20 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-white mb-4">Company</h4>
+              <h4 className="font-semibold text-white mb-4">More Tools</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white transition">About</a></li>
-                <li><a href="#" className="hover:text-white transition">Blog</a></li>
-                <li><a href="#" className="hover:text-white transition">Contact</a></li>
+                <li><a href="/pdf-editor" className="hover:text-white transition">PDF Editor</a></li>
+                <li><a href="/pdf-summarizer" className="hover:text-white transition">AI Summarizer</a></li>
+                <li><a href="/p2p-transfer" className="hover:text-white transition">Send Files Free</a></li>
+                <li><a href="/zip-extractor" className="hover:text-white transition">ZIP Extractor</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold text-white mb-4">Legal</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white transition">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-white transition">Terms of Service</a></li>
+                <li><a href="/privacy" className="hover:text-white transition">Privacy Policy</a></li>
+                <li><a href="/terms" className="hover:text-white transition">Terms of Service</a></li>
+                <li><a href="mailto:hello@omnipdf.xyz" className="hover:text-white transition">Contact Us</a></li>
               </ul>
             </div>
           </div>

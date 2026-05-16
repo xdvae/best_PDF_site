@@ -5,6 +5,8 @@ import { Route, Switch, useLocation } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 import MergePDF from "./pages/tools/MergePDF";
 import SplitPDF from "./pages/tools/SplitPDF";
 import CompressPDF from "./pages/tools/CompressPDF";
@@ -42,6 +44,8 @@ function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/privacy"} component={Privacy} />
+      <Route path={"/terms"} component={Terms} />
       <Route path={"/merge-pdf"} component={MergePDF} />
       <Route path={"/split-pdf"} component={SplitPDF} />
       <Route path={"/compress-pdf"} component={CompressPDF} />

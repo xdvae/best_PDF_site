@@ -9,7 +9,7 @@ import ToolPageSEO, { type ToolSEOConfig } from "@/components/ToolPageSEO";
 const SEO_CONFIG: ToolSEOConfig = {
   title: "Word to PDF Converter Free — Convert DOCX to PDF Online | OmniPDF",
   description: "Convert Word documents (DOC, DOCX) to PDF online free. No sign up, no ads, no watermarks. Formatting preserved. Instant PDF download. Trusted by millions.",
-  canonical: "https://omnipdf.app/word-to-pdf",
+  canonical: "https://omnipdf.xyz/word-to-pdf",
   ogTitle: "Free Word to PDF Converter — DOCX to PDF Online, No Sign Up",
   ogDescription: "Convert Word documents to PDF online free. Formatting preserved. No account required. Instant download. Used by millions.",
   h1: "Word to PDF — Convert DOCX to PDF Free",

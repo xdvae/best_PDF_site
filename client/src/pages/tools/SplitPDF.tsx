@@ -9,7 +9,7 @@ import ToolPageSEO, { type ToolSEOConfig } from "@/components/ToolPageSEO";
 const SEO_CONFIG: ToolSEOConfig = {
   title: "Split PDF Online Free — Extract Pages from PDF | OmniPDF",
   description: "Split PDF files online free. Extract specific page ranges from any PDF. No sign up, no ads, no watermarks. Files deleted after splitting. Trusted by millions.",
-  canonical: "https://omnipdf.app/split-pdf",
+  canonical: "https://omnipdf.xyz/split-pdf",
   ogTitle: "Free PDF Splitter — Extract PDF Pages Online, No Sign Up",
   ogDescription: "Split PDF files and extract pages online free. No account needed. Instant download, no watermarks. Used by millions.",
   h1: "Split PDF — Extract Pages Free",

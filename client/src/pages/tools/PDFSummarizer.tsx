@@ -9,7 +9,7 @@ import ToolPageSEO, { type ToolSEOConfig } from "@/components/ToolPageSEO";
 const SEO_CONFIG: ToolSEOConfig = {
   title: "AI PDF Summarizer Free — Summarize PDFs with AI Online | OmniPDF",
   description: "Summarize PDF documents with AI online free. Get instant AI-powered summaries of any PDF. No sign up, no ads, no watermarks. Fast AI PDF reader trusted by millions.",
-  canonical: "https://omnipdf.app/pdf-summarizer",
+  canonical: "https://omnipdf.xyz/pdf-summarizer",
   ogTitle: "Free AI PDF Summarizer — Summarize Any PDF Online, No Sign Up",
   ogDescription: "AI-powered PDF summarizer free. Get an instant summary of any PDF. No account needed. Used by millions.",
   h1: "AI PDF Summarizer — Summarize Any PDF Free",

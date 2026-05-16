@@ -16,7 +16,7 @@ interface ImageItem {
 const SEO_CONFIG: ToolSEOConfig = {
   title: "Images to PDF Converter — Convert JPG, PNG, WebP to PDF Free Online | OmniPDF",
   description: "Convert JPG, PNG, WebP, GIF images to PDF online free. Drag to reorder pages, rotate images, merge multiple photos into a single PDF. No signup, no watermarks, instant download.",
-  canonical: "https://omnipdf.app/images-to-pdf",
+  canonical: "https://omnipdf.xyz/images-to-pdf",
   ogTitle: "Free Image to PDF Converter — JPG, PNG, WebP to PDF Online",
   ogDescription: "Merge multiple images into one PDF online free. Supports JPG, PNG, WebP, GIF. Reorder pages by dragging, rotate images, download instantly.",
   h1: "Images to PDF Converter",

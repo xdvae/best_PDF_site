@@ -19,7 +19,7 @@ function getWsUrl() {
 const SEO_CONFIG: ToolSEOConfig = {
   title: "Send Files Free — P2P File Transfer, No Upload, No Sign Up | OmniPDF",
   description: "Send files between devices free. P2P file transfer — no server upload, no account, no size limits. Share files instantly via a 6-character code. Works across any network.",
-  canonical: "https://omnipdf.app/p2p-transfer",
+  canonical: "https://omnipdf.xyz/p2p-transfer",
   ogTitle: "Send Files Free Between Devices — No Upload, No Sign Up | OmniPDF",
   ogDescription: "Send files directly between devices — no cloud upload, no account. Just share a code. Free, instant, works across any network.",
   h1: "Send Files Free — Direct P2P Transfer, No Upload Required",

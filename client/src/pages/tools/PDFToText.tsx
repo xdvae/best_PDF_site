@@ -9,7 +9,7 @@ import ToolPageSEO, { type ToolSEOConfig } from "@/components/ToolPageSEO";
 const SEO_CONFIG: ToolSEOConfig = {
   title: "PDF to Text Converter Free — Extract Text from PDF Online | OmniPDF",
   description: "Extract text from PDF files online free. Convert PDF to plain text (.txt) with one click. No sign up, no ads, no watermarks. Files deleted instantly. Used by millions.",
-  canonical: "https://omnipdf.app/pdf-to-text",
+  canonical: "https://omnipdf.xyz/pdf-to-text",
   ogTitle: "Free PDF to Text Extractor — Extract PDF Content Online, No Sign Up",
   ogDescription: "Extract text from any PDF online free. Download as .txt instantly. No account needed. Used by millions.",
   h1: "PDF to Text — Extract Text from PDF Free",

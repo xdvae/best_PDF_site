@@ -9,7 +9,7 @@ import ToolPageSEO, { type ToolSEOConfig } from "@/components/ToolPageSEO";
 const SEO_CONFIG: ToolSEOConfig = {
   title: "Compress PDF Online Free — Reduce PDF File Size Instantly | OmniPDF",
   description: "Compress PDF files online free. Reduce PDF file size without losing quality. No sign up, no watermarks, no ads. Choose compression level. Used by millions. Files deleted instantly.",
-  canonical: "https://omnipdf.app/compress-pdf",
+  canonical: "https://omnipdf.xyz/compress-pdf",
   ogTitle: "Free PDF Compressor — Reduce PDF Size Online, No Sign Up",
   ogDescription: "Compress and reduce PDF file size online free. No account required. Fast, secure, no watermarks. Used by millions.",
   h1: "Compress PDF — Reduce File Size Free",
@@ -58,6 +58,7 @@ export default function CompressPDF() {
   const [pendingDownload, setPendingDownload] = useState<(() => void) | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
+  const [stats, setStats] = useState<{ original: number; compressed: number; ratio: number } | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleDrop = (e: React.DragEvent) => {
@@ -79,12 +80,17 @@ export default function CompressPDF() {
   const compressPDF = async () => {
     if (!file) { toast.error("Please select a PDF"); return; }
     setIsProcessing(true);
+    setStats(null);
     try {
       const formData = new FormData();
       formData.append("pdf", file);
       formData.append("quality", quality);
       const response = await fetch("/api/compress-pdf", { method: "POST", body: formData });
       if (!response.ok) throw new Error("Compression failed");
+      const original = parseInt(response.headers.get("X-Original-Size") || "0");
+      const compressed = parseInt(response.headers.get("X-Compressed-Size") || "0");
+      const ratio = parseInt(response.headers.get("X-Compression-Ratio") || "0");
+      if (original && compressed) setStats({ original, compressed, ratio });
       const blob = await response.blob();
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
@@ -144,6 +150,25 @@ export default function CompressPDF() {
                 <Download className="w-5 h-5 mr-2" />
                 {isProcessing ? "Compressing…" : "Compress PDF"}
               </Button>
+              {stats && (
+                <div className="mt-4 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl">
+                  <p className="text-sm font-semibold text-green-800 dark:text-green-200 mb-2">✓ Compression complete</p>
+                  <div className="grid grid-cols-3 gap-3 text-center">
+                    <div>
+                      <p className="text-xs text-slate-500 dark:text-slate-400">Original</p>
+                      <p className="font-bold text-slate-800 dark:text-white">{(stats.original / 1024 / 1024).toFixed(2)} MB</p>
+                    </div>
+                    <div>
+                      <p className="text-xs text-slate-500 dark:text-slate-400">Compressed</p>
+                      <p className="font-bold text-slate-800 dark:text-white">{(stats.compressed / 1024 / 1024).toFixed(2)} MB</p>
+                    </div>
+                    <div>
+                      <p className="text-xs text-slate-500 dark:text-slate-400">Saved</p>
+                      <p className="font-bold text-green-600 dark:text-green-400">{stats.ratio > 0 ? `${stats.ratio}%` : "~0%"}</p>
+                    </div>
+                  </div>
+                </div>
+              )}
             </CardContent>
           </Card>
         )}

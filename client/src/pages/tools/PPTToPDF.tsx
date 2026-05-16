@@ -9,7 +9,7 @@ import ToolPageSEO, { type ToolSEOConfig } from "@/components/ToolPageSEO";
 const SEO_CONFIG: ToolSEOConfig = {
   title: "PowerPoint to PDF Converter Free — Convert PPTX to PDF Online | OmniPDF",
   description: "Convert PowerPoint presentations (PPT, PPTX) to PDF online free. No sign up, no ads, no watermarks. Each slide becomes a PDF page. Instant download. Trusted by millions.",
-  canonical: "https://omnipdf.app/ppt-to-pdf",
+  canonical: "https://omnipdf.xyz/ppt-to-pdf",
   ogTitle: "Free PowerPoint to PDF — PPTX to PDF Online, No Sign Up",
   ogDescription: "Convert PowerPoint to PDF online free. Every slide becomes a page. No account needed. Used by millions.",
   h1: "PowerPoint to PDF — Convert PPTX to PDF Free",

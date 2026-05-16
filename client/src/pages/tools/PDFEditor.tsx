@@ -11,7 +11,7 @@ type Operation = "delete" | "rotate" | "reorder";
 const SEO_CONFIG: ToolSEOConfig = {
   title: "Free PDF Editor Online — Reorder, Delete & Rotate PDF Pages | OmniPDF",
   description: "Edit PDF files online free. Reorder pages, delete pages, rotate pages. No sign up, no ads, no watermarks. Fast PDF editor trusted by millions. Files deleted after editing.",
-  canonical: "https://omnipdf.app/pdf-editor",
+  canonical: "https://omnipdf.xyz/pdf-editor",
   ogTitle: "Free PDF Editor Online — Edit PDF Pages, No Sign Up",
   ogDescription: "Edit PDF pages online free. Reorder, delete, or rotate pages. No account needed. Used by millions.",
   h1: "PDF Editor — Edit PDF Pages Free Online",
