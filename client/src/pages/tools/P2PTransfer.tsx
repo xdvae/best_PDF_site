@@ -17,40 +17,56 @@ function getWsUrl() {
 }
 
 const SEO_CONFIG: ToolSEOConfig = {
-  title: "P2P File Transfer Free — Send Files Between Devices Instantly | OmniPDF",
-  description: "Transfer files directly between devices peer-to-peer. No server upload, no sign up, 100% free. Send large files instantly. Secure P2P file sharing trusted by millions.",
+  title: "Send Files Free — P2P File Transfer, No Upload, No Sign Up | OmniPDF",
+  description: "Send files between devices free. P2P file transfer — no server upload, no account, no size limits. Share files instantly via a 6-character code. Works across any network.",
   canonical: "https://omnipdf.app/p2p-transfer",
-  ogTitle: "Free P2P File Transfer — Send Files Device to Device, No Sign Up",
-  ogDescription: "Send files directly between devices P2P. No cloud upload. No account required. Instant, secure, free. Used by millions.",
-  h1: "P2P File Transfer — Send Files Device to Device Free",
-  h1Sub: "Transfer files directly between devices without uploading to any server — 100% free, instant, no sign up required.",
-  schemaName: "P2P File Transfer",
-  schemaDescription: "Free peer-to-peer file transfer tool. Send files directly between devices without cloud upload. No sign up required. Used by millions.",
-  keywords: ["peer to peer file transfer","p2p file sharing","transfer files between devices","send files device to device","local file transfer","wifi file transfer","browser file transfer","secure file transfer","direct file sharing","no upload file transfer","free online file tools","no signup file sharing"],
+  ogTitle: "Send Files Free Between Devices — No Upload, No Sign Up | OmniPDF",
+  ogDescription: "Send files directly between devices — no cloud upload, no account. Just share a code. Free, instant, works across any network.",
+  h1: "Send Files Free — Direct P2P Transfer, No Upload Required",
+  h1Sub: "Share files instantly between any two devices using a 6-character code. Files go directly device-to-device — nothing stored on any server. 100% free, no sign up.",
+  schemaName: "P2P File Sender",
+  schemaDescription: "Free online file sender. Transfer files directly between devices using a short code — no cloud upload, no account required.",
+  keywords: [
+    "send files online free",
+    "file sender",
+    "share files between devices",
+    "send large files free",
+    "p2p file transfer",
+    "transfer files without upload",
+    "send file to another device",
+    "wifi file transfer",
+    "file sharing no sign up",
+    "send files from phone to computer",
+    "send files from pc to phone",
+    "no upload file sharing",
+    "direct file transfer browser",
+    "share files online free",
+  ],
   howToSteps: [
-    "Click 'I'm Sending', select the files you want to transfer, then click 'Generate Transfer Code'.",
-    "Share the 6-character code that appears with the recipient via message or call.",
-    "The recipient opens OmniPDF P2P Transfer, clicks 'I'm Receiving', and enters the code.",
-    "Files transfer directly between devices — no server storage, no cloud upload, instant.",
+    "Click 'I'm Sending', select the files you want to send, then click 'Generate Transfer Code'.",
+    "A 6-character code appears — share it with the recipient via message, call, or in person.",
+    "The recipient opens OmniPDF on any device, clicks 'I'm Receiving', and enters the code.",
+    "Files transfer directly between devices in real time — nothing stored on any server.",
   ],
   seoBody: [
-    { heading: "Transfer Files Directly Between Devices — No Server Upload", text: "OmniPDF's P2P transfer uses WebSocket relay technology to stream files directly from one browser to another in real time. Your file data is never written to our servers — it passes through an encrypted relay and arrives instantly on the receiving device. Perfect for large files, sensitive documents, or anytime you want zero cloud exposure. Completely free, no sign up required, used by millions." },
-    { heading: "No Ads, No Account, Trusted by Millions", text: "Unlike cloud storage services that require accounts and store your files remotely, OmniPDF P2P Transfer is fully anonymous. No file data is ever stored on our servers. The transfer is free, requires no account, and leaves no trace of your files. Millions of users choose OmniPDF for tools that are genuinely private and genuinely free." },
+    { heading: "Send Files to Any Device — No Upload, No Account, No Limits", text: "OmniPDF's file sender lets you transfer files from your phone to your computer, PC to phone, or any two devices — using just a short 6-character code. Files stream directly between browsers via an encrypted relay. Nothing is stored on any server. No account required on either end. Free forever." },
+    { heading: "Send Large Files Free — No Size Limits, No Email Attachments", text: "Unlike email (which caps at 25MB) or cloud services that require accounts and store your files, OmniPDF's P2P file sender has no file size cap. Files are chunked and streamed in real time, so you can send videos, RAW photos, zip archives, or any file type. Completely anonymous and free." },
   ],
   features: [
-    { title: "Direct Device-to-Device", description: "Files stream directly between sender and receiver — no cloud intermediary or storage." },
-    { title: "No Server Upload", description: "Your file data never gets stored on OmniPDF servers. Total privacy by design." },
-    { title: "Any File Size", description: "Transfer large files without the size limits imposed by email or cloud services." },
-    { title: "100% Free", description: "P2P transfers are always free on OmniPDF — no file size cap, no premium tier." },
-    { title: "No Sign Up", description: "No email or account required on either end of the transfer." },
-    { title: "Works Across Networks", description: "Send from PC, receive on phone. Works across different networks and devices." },
+    { title: "Send to Any Device", description: "PC to phone, phone to laptop, tablet to desktop — works across any two devices with a browser." },
+    { title: "No Server Storage", description: "Your file data never touches our servers. It streams directly between browsers via an encrypted relay." },
+    { title: "No File Size Limit", description: "Send videos, archives, and large files without the size caps imposed by email or messaging apps." },
+    { title: "100% Free", description: "File sending is always free on OmniPDF — no premium tier, no credit card, no hidden fees." },
+    { title: "No Sign Up on Either End", description: "Neither the sender nor receiver needs an account. Just share the code and go." },
+    { title: "Works Across Networks", description: "Send from home WiFi, receive on mobile data. Works across different networks and ISPs." },
   ],
   faqs: [
-    { q: "Is P2P file transfer free?", a: "Yes — 100% free. No account, no file-size limits, no premium tier." },
-    { q: "Do my files get uploaded to OmniPDF servers?", a: "No. File data streams directly between browsers in real time. OmniPDF only facilitates the connection — your actual files are never stored on our servers." },
-    { q: "How large a file can I transfer?", a: "There is no hard file size limit. Files are streamed in chunks, so even very large files transfer reliably." },
-    { q: "Do both devices need to be on the same WiFi?", a: "No. P2P transfer works across different networks as long as both devices have internet access." },
+    { q: "Is sending files free?", a: "Yes — completely free. No account, no file-size limits, no premium tier required." },
+    { q: "Do my files get uploaded to OmniPDF servers?", a: "No. Files stream directly between browsers through an encrypted relay. OmniPDF only coordinates the connection — your actual file data is never stored on our servers." },
+    { q: "How large a file can I send?", a: "There is no file size limit. Files are streamed in chunks so even very large files (videos, archives) transfer reliably." },
+    { q: "Do both devices need to be on the same WiFi?", a: "No. File transfer works across different networks — home WiFi to mobile data, different ISPs, etc." },
     { q: "Is the transfer encrypted?", a: "Yes. All relay connections use HTTPS/WSS encryption so file data cannot be intercepted in transit." },
+    { q: "How do I send a file from my phone to my computer?", a: "Open OmniPDF on your phone, click 'I'm Sending', select your file, and get the code. Then open OmniPDF on your computer, click 'I'm Receiving', and enter the code. Files transfer instantly." },
   ],
   relatedTools: [
     { href: "/zip-extractor", label: "ZIP Extractor" },
@@ -276,11 +292,11 @@ export default function P2PTransfer() {
             {sendStep === "waiting" && (
               <div className="text-center space-y-5 py-4">
                 <p className="text-slate-500 dark:text-slate-400 text-sm">Share this code with the person receiving the files</p>
-                <div className="relative inline-block w-full">
-                  <div className="text-5xl font-mono font-black tracking-[0.3em] text-slate-900 dark:text-white bg-slate-100 dark:bg-slate-700 rounded-2xl py-7 text-center select-all">{code || "------"}</div>
-                  <button onClick={copyCode} className="absolute top-4 right-4 p-2.5 bg-white dark:bg-slate-600 rounded-xl shadow hover:shadow-md transition flex items-center gap-1.5 text-sm font-medium text-slate-600 dark:text-slate-200">
-                    {copied ? <Check className="w-4 h-4 text-green-500" /> : <Copy className="w-4 h-4" />}
-                    {copied ? "Copied!" : "Copy"}
+                <div className="w-full flex flex-col items-center gap-3">
+                  <div className="w-full text-4xl sm:text-5xl font-mono font-black tracking-[0.25em] sm:tracking-[0.3em] text-slate-900 dark:text-white bg-slate-100 dark:bg-slate-700 rounded-2xl py-7 px-4 text-center select-all break-all">{code || "------"}</div>
+                  <button onClick={copyCode} className="w-full sm:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow hover:shadow-md transition flex items-center justify-center gap-2 text-sm font-semibold">
+                    {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+                    {copied ? "Copied!" : "Copy Code"}
                   </button>
                 </div>
                 <div className="flex items-center justify-center gap-2 text-slate-400">

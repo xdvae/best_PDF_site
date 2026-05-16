@@ -66,13 +66,25 @@ export default function PDFToText() {
       const response = await fetch("/api/pdf-to-text", { method: "POST", body: formData });
       if (!response.ok) throw new Error("Conversion failed");
       const blob = await response.blob();
-      const url = URL.createObjectURL(blob);
+      const text = await blob.text();
+
+      // Detect image-based (scanned) PDFs — pdf-parse returns empty or near-empty string
+      if (!text || text.trim().length < 10) {
+        toast.error(
+          "This PDF appears to be image-based (scanned). Text extraction only works on PDFs with embedded text. Try an OCR tool to extract text from scanned documents.",
+          { duration: 8000 }
+        );
+        setIsProcessing(false);
+        return;
+      }
+
+      const url = URL.createObjectURL(new Blob([text], { type: "text/plain" }));
       const a = document.createElement("a");
       a.href = url; a.download = "extracted-text.txt"; document.body.appendChild(a);
       setPendingDownload(() => () => { a.click(); setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 1000); });
       setShowAd(true);
       toast.success("Text extracted successfully!");
-    } catch { toast.error("Failed to extract text"); }
+    } catch { toast.error("Failed to extract text. The PDF may be corrupt or password-protected."); }
     finally { setIsProcessing(false); }
   };
 
